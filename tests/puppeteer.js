@@ -57,7 +57,7 @@ chai.should();
           await this.resultHandle.getProperty("textContent")
         ).jsonValue();
         console.log("at 1, resultData is ", resultData);
-        resultData.should.include("A person record was added");
+        resultData.should.include("A person entry was added");
         const { index } = JSON.parse(resultData);
         this.lastIndex = index;
       });
